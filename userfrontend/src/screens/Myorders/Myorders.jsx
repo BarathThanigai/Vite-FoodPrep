@@ -2,9 +2,9 @@ import {useState,useContext,useEffect} from 'react'
 import {StoreContext} from '../../context/StoreContext'
 import axios from 'axios'
 import Loader from '../../components/Loader/Loader'
-import './MyOrders.css'
+import './Myorders.css'
 import {assets} from '../../assets/assets'
-const MyOrders = () => {
+const Myorders = () => {
     const [data,setData] = useState([])
     const [isLoading,setIsLoading] = useState(true)
     const {url,token,setToken} = useContext(StoreContext)
@@ -62,4 +62,4 @@ const MyOrders = () => {
   )
 }
 
-export default MyOrders
+export default Myorders
